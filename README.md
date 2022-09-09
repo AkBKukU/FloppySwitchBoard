@@ -1,6 +1,6 @@
 # FloppySwitchBoard - Alpha
 
-This is early alpha release of a work-in-progress project. The Floppy Switch Board 
+The Floppy Switch Board 
 is designed to allow you to connect multiple (theoretically indefinite) floppy drives to
 a single drive interface by letting you manually switch between them.
 
@@ -33,13 +33,13 @@ Being a completely passive device the floppy switch board does not require drive
 software of any kind to work, but it can benefit from it which I will cover in a 
 moment. The most simple setup would be connecting two drives to the system for use
 with disk imaging software that directly controls the drive such as IMD or dskImage.
-Drives connected to the board itself must use *non*-twisted cables. Addnitionally
-becase it switches the ID and motor lines it needs a DPDT switch for both signals
+Drives connected to the board itself must use *non*-twisted cables. Additionally
+because it switches the ID and motor lines it needs a DPDT switch for both signals
 which I have not yet found a prewired solution for. So you will have to get a switch
 and wire to put one together yourself.
 
 For normal DOS use there is a more advanced configuration that can be done using 
-`driver.sys`. This is a very poorly documented feature that allows you to manually
+`driver.sys`. There is [some](https://web.archive.org/web/20210412134354/http://info.wsisiz.edu.pl/~bse26236/batutil/help/DRIVER_S.HTM) documentaion on its features that allows you to manually
 create new "virtual" floppy drives on an MS-DOS system. It is even smart enough to
 know when you have multiple drives connected to the same ID to give you a moment to
 confirm that the drive is ready. With `driver.sys` you can switch between both drives 
@@ -68,11 +68,11 @@ drive you connect both it and the Gotek to a system and keep both usable(Keep in
 potential commpatibility issues because of the PC drive motor line though). 
 
 ## Roadmap
-I will be updating this project and contuing developement on it once I have settled in
+I will be updating this project and continuing development on it once I have settled in
 to my new office. I have multiple things I need to correct on it before I am going to
 call it done. I need to fix the following for the beta version:
 
  - Add jumper for motor select and possibly redo ID signalling entirely to support non-pcs
- - Changing mounting holes to match *something* on a floppy drive to make it eaier to install
+ - Changing mounting holes to match *something* on a floppy drive to make it easier to install
 
 
